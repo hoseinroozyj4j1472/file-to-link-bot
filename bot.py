@@ -1,8 +1,9 @@
+import os
 from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import time, json, os
 
-TOKEN = "8244355202:AAGToLdn9r2t-2B3uzXqmRXSTKzDi6H38bo"
+TOKEN = os.getenv("BOT_TOKEN")
 DATA_FILE = "data.json"
 SPAM_DELAY = 10
 TEMP_LINK_TIME = 600  # 10 دقیقه
